@@ -67,9 +67,9 @@ if [[ ! -d "$dlpath" ]]; then
 fi
 
 # Download templates from github gist
-curl -L https://gist.github.com/surajp/409425b479b706ad522f716db6498531/raw/bb5887e15db48858fed3af3c840e1a919c5bd6b0/index.js -o "$dlpath/index.js"
-curl -L https://gist.github.com/surajp/409425b479b706ad522f716db6498531/raw/bb5887e15db48858fed3af3c840e1a919c5bd6b0/resource-meta.xml -o "$dlpath/resource-meta.xml"
-curl -L https://gist.github.com/surajp/409425b479b706ad522f716db6498531/raw/bb5887e15db48858fed3af3c840e1a919c5bd6b0/webpack.config.js -o "$dlpath/webpack.config.js"
+curl -L https://raw.githubusercontent.com/MannyJMusic/Node-2-LWC/master/templates/index.js -o "$dlpath/index.js"
+curl -L https://raw.githubusercontent.com/MannyJMusic/Node-2-LWC/master/templates/resource-meta.xml -o "$dlpath/resource-meta.xml"
+curl -L https://raw.githubusercontent.com/MannyJMusic/Node-2-LWC/master/templates/webpack.config.js -o "$dlpath/webpack.config.js"
 
 # here exportlibname refers to the name of the exported library by webpack. in our lwc we will have to refer to our function as
 # <exportlibname>/<exportname>.
